@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴文豪 - UI Designer</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="shortcut icon" href="./assets/public/logo.ico" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <div id="earth-loader">
+        <div class="loader-content">
+            <img src="./assets/public/logo.svg" class="loader-logo">
+            <div class="progress-container">
+                <div class="progress-bar-inner"></div>
+            </div>
+            <p class="loader-text">正在构筑创意世界...</p>
+        </div>
+    </div>
+</head>
+
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">项目</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">文章</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">项目</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">文章</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-hi">你好 我是</div>
+                <a class="title-name" href="javascript:void(0)">吴文豪</a>
+            </div>
+            <div class="hello-desc" id="typed"></div>
+        </div>
+        <div class="content-divider"></div>
+        <div class="quickly-link">
+            <div class="title-hi">我的个人媒体</div>
+            <div class="loader"></div>
+            <div class="link-card">
+                <div class="link-card-list">
+                    <div class="magical link-card-item">
+                        <a href="https://www.xiaohongshu.com/user/profile/5ea2fc3e000000000100bd95?xhsshare=CopyLink&appuid=5ea2fc3e000000000100bd95&apptime=1718446067"
+                            target="_blank">
+                            <img src="./assets/index/xhs.png" alt="">
+                            <div class="info">
+                                <div class="info-title">小红书</div>
+                                <div class="info-desc">设计资源分享</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                        fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="https://huaban.com/user/q2bamxondu8" target="_blank">
+                            <img src="./assets/index/huaban.png" alt="">
+                            <div class="info">
+                                <div class="info-title">花瓣</div>
+                                <div class="info-desc">1000+优质页面参考</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                        fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="https://www.figma.com/@suanmiaoer" target="_blank">
+                            <img src="./assets/index/figma.png" alt="">
+                            <div class="info">
+                                <div class="info-title">Figma社区</div>
+                                <div class="info-desc">发布设计组件库资源</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                        fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="https://www.yuque.com/yuweng-fczxt" target="_blank">
+                            <img src="./assets/index/yuque.png" alt="">
+                            <div class="info">
+                                <div class="info-title">语雀</div>
+                                <div class="info-desc">来看看我的知识花园</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                        fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="javascript:void(0)">
+                            <img src="./assets/index/gongzhonghao.png" alt="">
+                            <div class="info">
+                                <div class="info-title">公众号</div>
+                                <div class="info-desc">微信搜索“UI创意空间”</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                        fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="javascript:void(0)">
+                            <img src=" ./assets/index/kong.png" alt="">
+                            <div class="info">
+                                <div class="info-title">暂无更多</div>
+                                <div class="info-desc">敬请期待...</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                        fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <div>© 2023 Design by <a href="javascript:void(0)">Suanmiaoer</a></div>
+                <span>|</span>
+                <div class=" fillings">
+                    <a href="javascript:void(0)">UI创意空间</a>
+                </div>
+            </div>
+        </div>
+        <div class="widget">
+            <div class="shape-light"></div>
+            <div class="shape-star">
+                <div class="rising-stars rising-stars-visible">
+                    <div style="height:1px;width:1px"></div>
+                    <div style="height:2px;width:2px"></div>
+                    <div style="height:1px;width:1px"></div>
+                </div>
+            </div>
+            <div class="shape-earth"></div>
+        </div>
+</body>
+
+<script>
+    // 页面加载控制逻辑
+    window.addEventListener('load', function () {
+        const loader = document.getElementById('earth-loader');
+        const progressBar = document.querySelector('.progress-bar-inner');
+
+        let progress = 0;
+        // 模拟平滑进度
+        const interval = setInterval(() => {
+            progress += Math.random() * 10; // 随机增加进度
+            if (progress >= 100) {
+                progress = 100;
+                if (progressBar) progressBar.style.width = '100%';
+                clearInterval(interval);
+
+                // 完成后延迟消失
+                setTimeout(() => {
+                    loader.classList.add('loader-hidden');
+                }, 600);
+            } else {
+                if (progressBar) progressBar.style.width = progress + '%';
+            }
+        }, 150);
+    });
+</script>
+
+<script>
+    // 打字效果，感谢 typed.js: https://mattboldt.github.io/typed.js/docs/
+    const options = {
+        strings: [
+            "👋🏻 欢迎来到我的个人网站 ^2000",
+            "一个爱代码的设计师  ^2000",
+        ],
+        typeSpeed: 50, // 打印速度
+        backSpeed: 40, // 回退速度
+        startDelay: 300, // 开始之前的延迟300毫秒
+        loop: true, // 是否循环
+        showCursor: false, // 不显示光标
+    };
+    const typed = new Typed('#typed', options);
+</script>
+<script type="text/javascript">
+    //切换窗口时改变页面title标题
+    window.onblur = function () {
+        document.title = "😭你快回来";
+    };
+    window.onfocus = function () {
+        document.title = "吴文豪 - UI Designer";
+    }
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+
+</html>

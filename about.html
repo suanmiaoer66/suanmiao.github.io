@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴文豪 - UI Designer</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/logo.ico" />
+</head>
+
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">项目</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">文章</li>
+                <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">项目</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">文章</li>
+                    <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="about">
+        <div class="about-top">
+            <div class="about-name">吴文豪</div>
+            <div class="about-info">
+                <div class="about-info-left">
+                    <div class="about-info-title">个人介绍</div>
+                    <div class="introduce-desc">
+                        目前是一名UI设计师，渴望成为一名全栈设计师。具备3年以上UI设计工作经验 ，承担多平台项目 ，设计创新并融合现有规
+                        范对多方案产出能力且具有方法论对支撑，紧跟设计趋势，具沉淀能力。<br><br>
+                        我对技术的无限可能性充满热情，也专注于探索产品设计价值观，寻求极致设计、交互、科技之间的平衡包容性和业务理解来解决问题。<br><br>
+                        掌握3D、动效、剪辑能力，踏实肯干，可以快速适应新环境，爱钻研新技术，时刻关注行业动态，学习新工具和方法，不断提升自己的设计技能。<br><br>
+                        如果你也玩小红书，看看我发布的<a
+                            href="https://www.xiaohongshu.com/user/profile/5ea2fc3e000000000100bd95?xhsshare=CopyLink&appuid=5ea2fc3e000000000100bd95&apptime=1718446067"
+                            target="_blank">生活笔记↗</a>，说不定，我们能找到共鸣。
+                    </div>
+                </div>
+                <div class="about-info-right">
+                    <div class="contact">
+                        <div class="about-info-title">联系方式</div>
+                        <div class="contact-desc">
+                            <div class="list">
+                                <div class="list-label">Email：</div>
+                                <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"
+                                    title="点击复制邮箱">
+                                    <a id="emailCopied">3227589330@qq.com</a>
+                                </div>
+                                <span class="list-value copied">copied&nbsp;✓</span>
+                            </div>
+                            <div class="list">
+                                <div class="list-label">Wechat：</div>
+                                <div class="list-value">
+                                    <a class="tooltip">designW66
+                                        <div class="tooltip-box">
+                                            <img src="./assets/about/wechat.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="about-info-title resume-title">简历</div>
+                        <div class="resume-desc">
+                            <div class="resume-desc-helptext">下载我的简历 (PDF)</div>
+                            <a href="./assets/about/个人简历.pdf" target="_blank" download="个人简历.pdf">
+                                <div class="magical resume-btn">下载PDF</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-middle">
+            <div class="power">
+                <div class="list-00">
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">23</div>
+                            <div class="card-text">年龄</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">3</div>
+                            <div class="card-text">年限</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">10+</div>
+                            <div class="card-text">项目</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">40+</div>
+                            <div class="card-text">文章</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="list-01">
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/figma.svg')"></div>
+                            <div class="card-text">UI技能-Figma</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/blender.svg')"></div>
+                            <div class="card-text">3D技能-Blender</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/ae.svg')"></div>
+                            <div class="card-text">动效技能-AE</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/ps.svg')"></div>
+                            <div class="card-text">平面技能-PS</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pr.svg')"></div>
+                            <div class="card-text">交互技能-Principle</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/menu.svg')"></div>
+                            <div class="card-text">更多能力...</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div class="experience">
+                <div class="item">
+                    <div class="time">❖ 2023.08 ~ 至今</div>
+                    <div class="name">
+                        <div class="company"><a href="javascript:void(0)"">深圳市塔比尔科技有限公司</a></div>
+                        <div class=" job">UI设计师</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">同心同悦</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>同心同悦致力于打造一个专门为中年人设计的创新型社交平台 专注于下沉市场，通过安全、高效的技术手段，帮助他们快速建立并维持
+                                        有意义的社交关系，提升生活质量和幸福感；</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">碰巧</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>碰巧致力于打造一个创新、安全、个性化的陌生人社交平台， 为用户提供一个开放、多元化的社交环境，通过智能算法为用户推荐感兴
+                                        趣的异性，使陌生人能够基于共同兴趣和价值观建立深度联系；</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2022.09 ~ 2023.08</div>
+                    <div class="name">
+                        <div class="company"><a href="https://yunlanzk.com/" target="_blank">深圳中科云览科技有限公司↗</a></div>
+                        <div class="job">UI兼产品设计师</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">云览普教</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>云览普教是智慧校园一体化管理app，可以帮助学校教师和校方更加高效地管理校园事务，提高工作效率和生产力。家长可通过APP与学校电子班牌互动，实现家校高效快捷沟通；
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">云览智能交互管理系统</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>云览智能交互系统是用于管理学校各项工作的信息化平台。该系统集成了学生信息管理、课程管理、通知公告管理等功能，帮助学校实现信息化办公和提高教学质量。可以通过移动端和网页端实现多终端接入具有较高的可用性和便捷性;
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">中科云览企业官网</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>中科云览官网是一个介绍公司以及公司产品的网站，用户可以通过官网了解产品信息并可以进行联系，以及后台系统的跳转登录;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2020.08 ~ 2022.07</div>
+                    <div class="name">
+                        <div class="company"><a href="javascript:void(0)">康卫科技(北京)股份有限公司</a></div>
+                        <div class="job">UI设计师</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">戏鲸 - 配音交友爱Pia戏</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>戏鲸是一款创新的在线多人语音配音秀软件，用户可以通过手机寻找小伙伴一起实况进行带有娱乐性的配音表演，并通过这种方式进行娱乐自己，交到朋友。</li>
+                                    <li>戏鲸App致力于娱乐领域原创内容及二创内容制作及分享的社区，用声线展示自己，用声音与观众互动；</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">等等～此处省略...</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>这里太古老的项目就不过多描述了😘</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2023 Design by <a href="javascript:void(0)">Suanmiaoer</a></div>
+            <span>|</span>
+            <div class=" fillings">
+                <a href="javascript:void(0)">UI创意空间</a>
+            </div>
+        </div>
+    </div>
+    <div class=" widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    //切换窗口时改变页面title标题
+    window.onblur = function () {
+        document.title = "😭你快回来";
+    };
+    window.onfocus = function () {
+        document.title = "吴文豪 - UI Designer";
+    }
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+
+</html>

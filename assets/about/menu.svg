@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu" transform="translate(0.706265, 0.894619)" fill-rule="nonzero">
+            <path d="M0.83333,0 C0.3731,0 0,0.3731 0,0.83333 L0,4.16667 L4.16667,4.16667 L4.16667,0 L0.83333,0 Z" id="路径" fill-opacity="0.4" fill="#437C61"></path>
+            <polygon id="路径" fill-opacity="0.4" fill="#437C61" points="9.5833 0 5.41667 0 5.41667 4.16667 9.5833 4.16667"></polygon>
+            <path d="M10.8333,0 L14.1667,0 C14.6269,0 15,0.3731 15,0.83333 L15,4.16667 L10.8333,4.16667 L10.8333,0 Z" id="路径" fill-opacity="0.4" fill="#437C61"></path>
+            <path d="M4.16667,10.8333 L0,10.8333 L0,14.1667 C0,14.6269 0.3731,15 0.83333,15 L4.16667,15 L4.16667,10.8333 Z" id="路径" fill-opacity="0.4" fill="#437C61"></path>
+            <polygon id="路径" fill-opacity="0.4" fill="#437C61" points="5.41667 10.8333 9.5833 10.8333 9.5833 15 5.41667 15"></polygon>
+            <path d="M15,10.8333 L10.8333,10.8333 L10.8333,15 L14.1667,15 C14.6269,15 15,14.6269 15,14.1667 L15,10.8333 Z" id="路径" fill-opacity="0.4" fill="#437C61"></path>
+            <polygon id="路径" fill="#43AB7A" points="0 5.41667 4.16667 5.41667 4.16667 9.5833 0 9.5833"></polygon>
+            <polygon id="路径" fill="#43AB7A" points="5.41667 5.41667 9.5833 5.41667 9.5833 9.5833 5.41667 9.5833"></polygon>
+            <polygon id="路径" fill="#43AB7A" points="15 5.41667 10.8333 5.41667 10.8333 9.5833 15 9.5833"></polygon>
+        </g>
+    </g>
+</svg>
