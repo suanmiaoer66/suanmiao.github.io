@@ -12,7 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
 
+<body>
+    <!-- 加载样式 -->
     <div id="earth-loader">
         <div class="loader-content">
             <img src="./assets/public/logo.svg" class="loader-logo">
@@ -22,9 +25,7 @@
             <p class="loader-text">正在构筑创意世界...</p>
         </div>
     </div>
-</head>
-
-<body>
+    <!-- 内容 -->
     <canvas class="fireworks"></canvas>
     <div class="head">
         <div class="main">
@@ -191,31 +192,8 @@
         </div>
 </body>
 
-<script>
-    // 页面加载控制逻辑
-    window.addEventListener('load', function () {
-        const loader = document.getElementById('earth-loader');
-        const progressBar = document.querySelector('.progress-bar-inner');
-
-        let progress = 0;
-        // 模拟平滑进度
-        const interval = setInterval(() => {
-            progress += Math.random() * 10; // 随机增加进度
-            if (progress >= 100) {
-                progress = 100;
-                if (progressBar) progressBar.style.width = '100%';
-                clearInterval(interval);
-
-                // 完成后延迟消失
-                setTimeout(() => {
-                    loader.classList.add('loader-hidden');
-                }, 600);
-            } else {
-                if (progressBar) progressBar.style.width = progress + '%';
-            }
-        }, 150);
-    });
-</script>
+<!-- 引用外部脚本（替换原有内联加载脚本） -->
+<script src="./js/loader.js"></script> <!-- 新增：引用独立的加载脚本 -->
 
 <script>
     // 打字效果，感谢 typed.js: https://mattboldt.github.io/typed.js/docs/
