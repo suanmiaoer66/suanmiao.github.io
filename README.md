@@ -4,7 +4,7 @@
 欢迎访问我的个人网站，这里是我展示设计作品、分享技术思考与记录生活的小空间。
 
 - 网站地址：https://suanmiaoer66.github.io/suanmiao.github.io/
-- 基于开源模板 asorn-open 二次开发，使用纯 HTML/CSS/JS 构建，无复杂依赖。
+- 纯原创手搓，使用纯 HTML/CSS/JS 构建，无复杂依赖。
 
 ## 网站用途
 - **作品集展示**：呈现我的 UI/网页设计项目与视觉作品
