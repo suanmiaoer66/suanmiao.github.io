@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/public/logo.ico" type="image/x-icon">
+  <title>蒜苗儿 - 个人博客</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">UI</span>
+        <span class="logo-accent">Designer</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">首页</a>
+        <a href="projects.html" class="nav-link">项目</a>
+        <a href="articles.html" class="nav-link">文章</a>
+        <a href="about.html" class="nav-link">关于</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- 粒子画布 - 新增 -->
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-background">
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-subtitle animate-fade-in">UI/UX Designer | 视觉设计 | 交互设计</p>
+      <h1 class="hero-title animate-fade-up">蒜苗儿</h1>
+      <p class="hero-slogan">
+        <!-- 动态文字容器：JS 会自动替换内容，无需写死文案 -->
+        <span class="typewriter-text" id="typewriter"></span>
+        <!-- 独立光标：避免删除时闪烁异常 -->
+        <span class="typewriter-cursor"></span>
+      </p>
+      <p class="hero-description animate-fade-up" style="animation-delay: 0.4s;">
+        4+年UI设计经验 | 花瓣认证设计师
+      </p>
+      <div class="hero-buttons animate-fade-up" style="animation-delay: 0.6s;">
+        <a href="projects.html" class="btn btn-primary">
+          查看作品 <span class="arrow">→</span>
+        </a>
+        <a href="about.html" class="btn btn-secondary">
+          关于我 <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <!-- 小鼠标 -->
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-border">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社交平台内容 -->
+  <section class="social-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>我的个人媒体</h2>
+        <p>如果你也同样喜欢生活，请关注我</p>
+      </div>
+      <div class="social-grid">
+        <a href="https://huaban.com/user/q2bamxondu8" target="_blank" class="social-card animate-on-scroll"
+          style="animation-delay: 0.1s;">
+          <div class="social-icon">
+            <img src="images/index/huaban_logo.png" class="icon-img">
+          </div>
+          <span>花瓣</span>
+        </a>
+        <a href="https://www.figma.com/@suanmiaoer" target="_blank" class="social-card animate-on-scroll"
+          style="animation-delay: 0.2s;">
+          <div class="social-icon">
+            <img src="images/index/figma_logo.png" class="icon-img">
+          </div>
+          <span>Figma</span>
+        </a>
+        <a href="https://www.iconfont.cn/user/detail?spm=a313x.user_detail.i1.dcc7d6115.26663a81NccmFJ&userViewType=collections&uid=11086052&nid=VXanlP2ZHJiq"
+          target="_blank" class="social-card animate-on-scroll" style="animation-delay: 0.3s;">
+          <div class="social-icon">
+            <img src="images/index/iconfont_logo.png" class="icon-img">
+          </div>
+          <span>iconfont</span>
+        </a>
+        <a href="https://www.xiaohongshu.com/user/profile/5ea2fc3e000000000100bd95" target="_blank"
+          class="social-card animate-on-scroll" style="animation-delay: 0.4s;">
+          <div class="social-icon">
+            <img src="images/index/redbook_logo.png" class="icon-img">
+          </div>
+          <span>小红书</span>
+        </a>
+        <a href="https://www.zcool.com.cn/u/25289370" target="_blank" class="social-card animate-on-scroll"
+          style="animation-delay: 0.5s;">
+          <div class="social-icon">
+            <img src="images/index/zcool_logo.png" class="icon-img">
+          </div>
+          <span>站酷</span>
+        </a>
+        <a href="https://www.yuque.com/yuweng-fczxt" target="_blank" class="social-card animate-on-scroll"
+          style="animation-delay: 0.6s;">
+          <div class="social-icon">
+            <img src="images/index/yuque_logo.png" class="icon-img">
+          </div>
+          <span>语雀</span>
+        </a>
+        <a href="https://github.com/suanmiaoer66" class="social-card animate-on-scroll" style="animation-delay: 0.7s;">
+          <div class="social-icon">
+            <img src="images/index/github_logo.png" class="icon-img">
+          </div>
+          <span>github</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装逼部分 -->
+  <section class="highlights-section">
+    <div class="container">
+      <div class="highlights-grid">
+        <div class="highlight-item animate-on-scroll">
+          <div class="highlight-icon">
+            <div class="highlight-icon-inner">
+              <img src="images/index/项目.png" alt="">
+            </div>
+          </div>
+          <h3>10+</h3>
+          <p>原创设计作品</p>
+        </div>
+        <div class="highlight-item animate-on-scroll" style="animation-delay: 0.2s;">
+          <div class="highlight-icon">
+            <div class="highlight-icon-inner">
+              <img src="images/index/设计.png" alt="">
+            </div>
+          </div>
+          <h3>全平台设计</h3>
+          <p>APP / Web / 数据可视化 / 运营视觉</p>
+        </div>
+        <div class="highlight-item animate-on-scroll" style="animation-delay: 0.4s;">
+          <div class="highlight-icon">
+            <div class="highlight-icon-inner">
+              <img src="images/index/理念.png" alt="">
+            </div>
+          </div>
+          <h3>核心理念</h3>
+          <p>美感 × 体验 × 商业转化</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content animate-on-scroll">
+        <div>
+          <h2>想看我的完整设计作品？</h2>
+          <p>探索我的设计项目和创作过程</p>
+        </div>
+        <a href="projects.html" class="btn btn-white">
+          进入项目页 <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 蒜苗儿 · 个人UI设计师作品集网站 | 极简设计・原创作品</p>
+    </div>
+  </footer>
+
+  <!-- 滚动到顶部按钮 -->
+  <button id="scrollToTop" class="scroll-to-top">
+    <span class="arrow-up">↑</span>
+  </button>
+
+  <script src="js/script.js"></script>
+  <!-- 引入独立的粒子效果JS文件（路径根据实际位置调整） -->
+  <script src="js/particlebg.js"></script>
+  <!-- 引入打字机JS文件（路径根据你的实际目录调整） -->
+  <script src="js/typewriter.js"></script>
+  <!-- 页面title文案变化 -->
+  <script src="js/title-change.js"></script>
+  <!-- 引入鼠标点击粒子效果 JS -->
+  <script src="js/click-particle.js"></script>
+</body>
+
+</html>
